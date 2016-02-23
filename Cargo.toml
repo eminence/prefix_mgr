@@ -1,0 +1,16 @@
+[package]
+name = "env_mgr"
+version = "0.1.0"
+authors = ["Andrew Chin <achin@eminence32.net>"]
+
+[dependencies]
+clap = "2.1.1"
+
+
+[dependencies.setenv]
+#git="https://github.com/eminence/setenv.git"
+path = "/storage/home/achin/devel/rust_libs/setenv"
+
+[[bin]]
+name = "prefix_mgr"
+path = "src/prefix_mgr.rs"
